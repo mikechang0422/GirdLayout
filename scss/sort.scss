@@ -1,3 +1,83 @@
+.header {
+  display: flex;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 970px;
+  text-align: center;
+  background: url('../images/flat-coffee-beans.jpg') center center / cover;
+  background-color: rgb(0, 0, 0,);
+  box-shadow: inset 1px 1px 3px 5px #7c5119;
+  border-bottom: none;
+  font-weight: 700;
+  flex-direction: column;
+
+  .logo {
+    margin: 20px;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+  }
+
+  .logo:hover {
+    transform: rotate(360deg);
+  }
+
+  .nav {
+    margin: auto;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .nav-item {
+    margin-left: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 700;
+
+    a {
+      position: relative;
+      bottom: 0;
+      display: inline-block;
+      font-size: 1.5rem;
+      color: rgb(165, 115, 84);
+      text-shadow: 3px 3px #333, -3px 3px #333, 3px -3px #333, -3px -3px #333;
+      vertical-align: bottom;
+    }
+
+    a::after {
+      display: block;
+      margin: 6px auto 0;
+      width: 0;
+      transition: 0.3s ease-in-out;
+      content: '';
+      border-bottom: 3px solid #7c5119;
+    }
+
+    a:hover {
+      bottom: 10px;
+    }
+
+    a:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.wrap {
+  position: relative;
+  padding-left: 5%;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1440px;
+}
+
 .item-style1,
 .item-style1::before {
   border-color: #ff64dd;

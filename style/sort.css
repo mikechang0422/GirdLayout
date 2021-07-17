@@ -1,3 +1,98 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 970px;
+  text-align: center;
+  background: url("../images/flat-coffee-beans.jpg") center center/cover;
+  background-color: black;
+  -webkit-box-shadow: inset 1px 1px 3px 5px #7c5119;
+          box-shadow: inset 1px 1px 3px 5px #7c5119;
+  border-bottom: none;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .logo {
+  margin: 20px;
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 3px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.header .logo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.header .nav {
+  margin: auto;
+}
+
+.header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header .nav-item {
+  margin-left: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.header .nav-item a {
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #a57354;
+  text-shadow: 3px 3px #333, -3px 3px #333, 3px -3px #333, -3px -3px #333;
+  vertical-align: bottom;
+}
+
+.header .nav-item a::after {
+  display: block;
+  margin: 6px auto 0;
+  width: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  content: '';
+  border-bottom: 3px solid #7c5119;
+}
+
+.header .nav-item a:hover {
+  bottom: 10px;
+}
+
+.header .nav-item a:hover::after {
+  width: 100%;
+}
+
+.wrap {
+  position: relative;
+  padding-left: 5%;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1440px;
+}
+
 .item-style1,
 .item-style1::before {
   border-color: #ff64dd;
