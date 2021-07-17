@@ -1,0 +1,49 @@
+.item {
+  padding: 8px;
+  margin-bottom: 4px;
+  width: 180px;
+  background-color: #fff;
+  border-radius: 5px;
+  border-bottom: 3px solid;
+
+  .img {
+    display: block;
+  }
+
+  .category {
+    margin: 15px 9px 10px;
+    font-size: 1.2rem;
+    color: #aaa;
+    letter-spacing: 1px;
+  }
+
+  .category::before {
+    display: inline-block;
+    margin-right: 5px;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid;
+    border-radius: 50%;
+    content: '';
+    vertical-align: -2px;
+  }
+
+  .description {
+    margin: 10px;
+    line-height: 1.5;
+  }
+
+  > a {
+    display: block;
+    padding: 8px 8px 11px;
+    margin: -8px -8px -11px;
+    color: #777;
+    border-radius: inherit;
+    transition: 0.3s;
+  }
+
+  > a:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3);
+  }
+}
