@@ -87,10 +87,10 @@
 
 .wrap {
   position: relative;
-  padding-left: 5%;
+  margin: 0 auto;
   margin-top: 20px;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1292px;
 }
 
 .item-style1,
@@ -111,5 +111,17 @@
 .item-style4,
 .item-style4::before {
   border-color: #7fff00;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    max-width: 740px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrap {
+    max-width: 372px;
+  }
 }
 /*# sourceMappingURL=sort.css.map */
